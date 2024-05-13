@@ -1,9 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-vim.opt.tabstop = 8 -- Always 8 (see :h tabstop)
-vim.opt.softtabstop = 4 -- What you expecting
-vim.opt.shiftwidth = 4
-
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore
@@ -16,9 +12,11 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    -- { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+     { import = "lazyvim.plugins.extras.lang.json" },
+     { import = "lazyvim.plugins.extras.lang.rust" },
+     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+      { import = "lazyvim.plugins.extras.coding.tabnine" },
+       { import = "lazyvim.plugins.extras.coding.codeium" },
     -- import/override with your plugins
     { import = "plugins" },
   },
