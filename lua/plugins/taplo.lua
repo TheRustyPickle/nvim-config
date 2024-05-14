@@ -11,7 +11,7 @@ return {
                                 require("crates").show_versions_popup()
                             end
                         end,
-                        desc = "Show availale crate versions",
+                        desc = "Show available crate versions",
                     },
                     {
                         "Y",
@@ -20,7 +20,7 @@ return {
                                 require("crates").show_features_popup()
                             end
                         end,
-                        desc = "Show availale crates features",
+                        desc = "Show available crates features",
                     },
                     {
                         "<leader>cu",
@@ -39,7 +39,7 @@ return {
                             end
                         end,
                         desc = "Upgrade all crates",
-                    }
+                    },
                 },
             },
         },

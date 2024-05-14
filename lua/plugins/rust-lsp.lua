@@ -24,6 +24,31 @@ return {
                 on_attach = function(client, bufnr)
                     require("lsp-inlayhints").on_attach(client, bufnr)
                 end,
+                default_settings = {
+                    -- rust-analyzer language server configuration
+                    ["rust-analyzer"] = {
+                        cargo = {
+                            allFeatures = true,
+                            loadOutDirsFromCheck = true,
+                            buildScripts = {
+                                enable = true,
+                            },
+                        },
+                        -- Add clippy lints for Rust.
+                        checkOnSave = {
+                            allFeatures = true,
+                            command = "clippy",
+                        },
+                        procMacro = {
+                            enable = true,
+                            ignored = {
+                                ["async-trait"] = { "async_trait" },
+                                ["napi-derive"] = { "napi" },
+                                ["async-recursion"] = { "async_recursion" },
+                            },
+                        },
+                    },
+                },
             },
         }
     end,
