@@ -50,7 +50,7 @@ return {
                     enabled = true,
                     show_start = true,
                     show_end = true,
-                    char = "┃",
+                    char = "▍",
                     highlight = highlight_colors,
                 },
             })
