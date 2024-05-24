@@ -2,7 +2,11 @@
 require("config.lazy")
 
 if vim.g.neovide then
-    vim.o.guifont = "JetBrains Mono:h11"
+    -- vim.o.guifont = "FiraCode Nerd Font:h12"
+    vim.o.guifont = "CaskaydiaCove NF:h12"
+    -- vim.o.guifont = "JetBrainsMono NF:h12"
+    -- vim.o.guifont = "Mononoki Nerd Font:h12"
+    -- vim.o.guifont = "FantasqueSansM Nerd Font:h13"
     vim.g.neovide_theme = "light"
     vim.g.neovide_refresh_rate = 144
     vim.g.neovide_cursor_smooth_blink = true
