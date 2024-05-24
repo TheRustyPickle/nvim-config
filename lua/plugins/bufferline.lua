@@ -3,6 +3,9 @@ return {
     opts = {
         options = {
             separator_style = "slope",
+            indicator = {
+                style = "underline",
+            },
         },
     },
 }
