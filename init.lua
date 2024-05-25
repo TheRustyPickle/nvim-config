@@ -10,7 +10,7 @@ if vim.g.neovide then
     vim.g.neovide_theme = "light"
     vim.g.neovide_refresh_rate = 144
     vim.g.neovide_cursor_smooth_blink = true
-    vim.g.neovide_underline_stroke_scale = 2.0
+    vim.g.neovide_underline_stroke_scale = 3.2
     vim.g.neovide_cursor_animate_in_insert_mode = true
     vim.g.neovide_cursor_animate_command_line = true
     vim.g.neovide_scroll_animation_far_lines = 5
