@@ -1,36 +1,48 @@
--- plugins/lspconfig.lua
 return {
     "neovim/nvim-lspconfig",
     opts = {
         servers = {
             tsserver = {
-                settings = {
-                    typescript = {
-                        inlayHints = {
-                            includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
-                            includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                            includeInlayVariableTypeHints = true,
-                            includeInlayFunctionParameterTypeHints = true,
-                            includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-                            includeInlayPropertyDeclarationTypeHints = true,
-                            includeInlayFunctionLikeReturnTypeHints = true,
-                            includeInlayEnumMemberValueHints = true,
+                enabled = false,
+            },
+        },
+        vtsls = {
+            settings = {
+                complete_function_calls = true,
+                vtsls = {
+                    enableMoveToFileCodeAction = true,
+                    experimental = {
+                        completion = {
+                            enableServerSideFuzzyMatch = true,
                         },
                     },
-                    javascript = {
-                        inlayHints = {
-                            includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all'
-                            includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                            includeInlayVariableTypeHints = true,
-                            includeInlayFunctionParameterTypeHints = true,
-                            includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-                            includeInlayPropertyDeclarationTypeHints = true,
-                            includeInlayFunctionLikeReturnTypeHints = true,
-                            includeInlayEnumMemberValueHints = true,
-                        },
-                    },
-                    completions = {
+                },
+                typescript = {
+                    updateImportsOnFileMove = { enabled = "always" },
+                    suggest = {
                         completeFunctionCalls = true,
+                    },
+                    inlayHints = {
+                        enumMemberValues = { enabled = true },
+                        functionLikeReturnTypes = { enabled = true },
+                        parameterNames = { enabled = "all" },
+                        parameterTypes = { enabled = true },
+                        propertyDeclarationTypes = { enabled = true },
+                        variableTypes = { enabled = true },
+                    },
+                },
+                javascript = {
+                    updateImportsOnFileMove = { enabled = "always" },
+                    suggest = {
+                        completeFunctionCalls = true,
+                    },
+                    inlayHints = {
+                        enumMemberValues = { enabled = true },
+                        functionLikeReturnTypes = { enabled = true },
+                        parameterNames = { enabled = "all" },
+                        parameterTypes = { enabled = true },
+                        propertyDeclarationTypes = { enabled = true },
+                        variableTypes = { enabled = true },
                     },
                 },
             },
