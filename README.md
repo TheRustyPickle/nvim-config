@@ -9,8 +9,10 @@ This is my repository for my neovim configuration files. It is bootstrapped from
 - Rainbow parentheses synced with rainbow blank line
 - Custom keymaps for upgrading a single or all Rust crates, viewing version and features in Cargo.toml
 - Typo checker using typos
-- Modified tsserver LSP settings
+- Modified ts/js LSP settings
 - Wakatime plugin
 - Autoformat on save has been disabled
 - Modified tab space to 4
 - Neovide config including cursor blinking, font size, underline thickness
+- Changed dashboard art/logo
+- Modified lualine
