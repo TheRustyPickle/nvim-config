@@ -22,9 +22,11 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.coding.codeium" },
         { import = "lazyvim.plugins.extras.coding.mini-surround" },
         { import = "lazyvim.plugins.extras.coding.yanky" },
+        --perhaps enable when not using neovide
         --{ import = "lazyvim.plugins.extras.ui.mini-animate" },
-        --{ import = "lazyvim.plugins.extras.ui.mini-indentscope" },
         { import = "lazyvim.plugins.extras.editor.dial" },
+        { import = "lazyvim.plugins.extras.editor.inc-rename" },
+        { import = "lazyvim.plugins.extras.editor.fzf" },
         { import = "lazyvim.plugins.extras.test.core" },
         { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
         -- import/override with your plugins
