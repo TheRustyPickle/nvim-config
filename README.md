@@ -16,3 +16,4 @@ This is my repository for my neovim configuration files. It is bootstrapped from
 - Neovide config including cursor blinking, font size, underline thickness
 - Changed dashboard art/logo
 - Modified lualine
+- Auto change working directory to the project root
