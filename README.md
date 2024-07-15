@@ -7,7 +7,7 @@ This is my repository for my neovim configuration files. It is bootstrapped from
 - Autosave on text change
 - Rainbow blank line with custom color and indent character
 - Rainbow parentheses synced with rainbow blank line
-- Custom keymaps for upgrading a single or all Rust crates, viewing version and features in Cargo.toml
+- Custom keymaps for upgrading a single or all Rust crates, viewing versions and features in Cargo.toml
 - Typo checker using typos
 - Modified ts/js LSP settings
 - Wakatime plugin
@@ -17,3 +17,5 @@ This is my repository for my neovim configuration files. It is bootstrapped from
 - Changed dashboard art/logo
 - Modified lualine
 - Auto change working directory to the project root
+
+![Screenshot from 2024-07-15 17-09-04](https://github.com/user-attachments/assets/b6025df0-55ae-4250-b466-39964367e514)
