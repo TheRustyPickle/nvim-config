@@ -9,6 +9,7 @@ vim.g.autoformat = false
 vim.opt.scrolloff = 15
 vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.background = "light"
 
 local map = vim.keymap.set
 map("n", "<leader>cz", ":RustAnalyzer restart<CR>", { desc = " Restart Rust Analyzer", silent = true })
