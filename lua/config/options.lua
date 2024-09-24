@@ -11,6 +11,3 @@ vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.background = "light"
 
-local map = vim.keymap.set
-map("n", "<leader>cz", ":RustAnalyzer restart<CR>", { desc = " Restart Rust Analyzer", silent = true })
-map("n", "<leader>cx", ":RustAnalyzer start<CR>", { desc = " Start Rust Analyzer", silent = true })
