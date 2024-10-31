@@ -14,7 +14,7 @@ return {
                         desc = "Show available crate versions",
                     },
                     {
-                        "Y",
+                        "J",
                         function()
                             if vim.fn.expand("%:t") == "Cargo.toml" and require("crates").popup_available() then
                                 require("crates").show_features_popup()

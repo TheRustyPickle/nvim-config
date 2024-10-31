@@ -5,9 +5,5 @@ return {
     },
     cmd = "ASToggle",
     event = { "InsertLeave", "TextChanged" },
-    opts = {
-        execution_message = {
-            enabled = false,
-        },
-    },
+    opts = {},
 }
