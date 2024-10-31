@@ -10,8 +10,14 @@ if vim.g.neovide then
 end
 
 local map = vim.keymap.set
-map("n", "<leader>cz", ":RustAnalyzer restart<CR>", { desc = "Restart Rust Analyzer", silent = true })
-map("n", "<leader>cx", ":RustAnalyzer start<CR>", { desc = "Start Rust Analyzer", silent = true })
+
+vim.api.nvim_create_autocmd({"FileType"}, {
+    pattern = {"rust", "toml"},
+    callback = function()
+        map("n", "<leader>cz", ":RustAnalyzer restart<CR>", { desc = "Restart Rust Analyzer", silent = true })
+        map("n", "<leader>cx", ":RustAnalyzer start<CR>", { desc = "Start Rust Analyzer", silent = true })
+    end,
+})
 map("n", "<leader>ghv", ":DiffviewOpen<CR>", { desc = "Start DiffView", silent = true })
 map("n", "<leader>ghV", ":lua open_diffview_with_branch()<CR>", { desc = "Start DiffView on Branch", silent = true })
 
