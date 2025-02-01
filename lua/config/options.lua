@@ -12,3 +12,4 @@ vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.background = "light"
 vim.g.autoformat = false
+vim.g.lazyvim_picker = "snacks"

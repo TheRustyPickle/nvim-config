@@ -28,5 +28,26 @@ return {
             },
         },
         scroll = { enabled = false },
+        toggle = {
+            enabled = true,
+            which_key = true,
+            notify = true,
+            color = {
+                enabled = "green",
+                disabled = "red",
+            },
+        },
+        words = {
+            enabled = true,
+        },
+        explorer = {
+            enabled = true,
+        },
+        picker = {
+            enabled = true,
+            sources = {
+                explorer = {},
+            },
+        },
     },
 }
