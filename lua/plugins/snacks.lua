@@ -49,5 +49,8 @@ return {
                 explorer = {},
             },
         },
+        statuscolumn = {
+            enabled = true,
+        },
     },
 }
