@@ -2,12 +2,12 @@
 require("config.lazy")
 
 if vim.g.neovide then
-    -- vim.o.guifont = "FiraCode Nerd Font:h12"
-    vim.o.guifont = "CaskaydiaCove NF:h12"
-    -- vim.o.guifont = "JetBrainsMono NF:h12"
-    -- vim.o.guifont = "Mononoki Nerd Font:h12"
-    -- vim.o.guifont = "FantasqueSansM Nerd Font:h13"
-    -- vim.o.guifont = "Iosevka NF:h12"
+    -- vim.o.guifont = "FiraCode Nerd Font Mono:h12"
+    vim.o.guifont = "CaskaydiaCove Nerd Font Mono:h12"
+    -- vim.o.guifont = "JetBrainsMono NFM:h12"
+    -- vim.o.guifont = "Mononoki Nerd Font Mono:h12"
+    -- vim.o.guifont = "FantasqueSansM Nerd Font Mono:h13"
+    -- vim.o.guifont = "Iosevka NFM:h12"
     vim.g.neovide_theme = "light"
     vim.g.neovide_refresh_rate = 144
     vim.g.neovide_cursor_smooth_blink = true
@@ -15,6 +15,7 @@ if vim.g.neovide then
     vim.g.neovide_cursor_animate_in_insert_mode = true
     vim.g.neovide_cursor_animate_command_line = true
     vim.g.neovide_scroll_animation_far_lines = 5
+    vim.g.neovide_cursor_vfx_mode = "sonicboom"
     vim.opt.guicursor = {
         "n-v-c:block", -- Normal, Visual, Command modes: block cursor
         "i-ci-ve:ver25", -- Insert, Command-line insert, Visual-execute modes: vertical bar with 25% width
