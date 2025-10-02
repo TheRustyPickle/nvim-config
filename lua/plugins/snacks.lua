@@ -16,16 +16,6 @@ return {
             scope = {
                 enabled = false,
             },
-            chunk = {
-                enabled = true,
-                char = {
-                    corner_top = "╭",
-                    corner_bottom = "╰",
-                    horizontal = "─",
-                    vertical = "│",
-                    arrow = "→",
-                },
-            },
         },
         scroll = { enabled = false },
         toggle = {

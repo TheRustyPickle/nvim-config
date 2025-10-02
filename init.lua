@@ -15,7 +15,6 @@ if vim.g.neovide then
     vim.g.neovide_cursor_animate_in_insert_mode = true
     vim.g.neovide_cursor_animate_command_line = true
     vim.g.neovide_scroll_animation_far_lines = 5
-    vim.g.neovide_cursor_vfx_mode = "sonicboom"
     vim.opt.guicursor = {
         "n-v-c:block", -- Normal, Visual, Command modes: block cursor
         "i-ci-ve:ver25", -- Insert, Command-line insert, Visual-execute modes: vertical bar with 25% width

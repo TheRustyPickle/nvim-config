@@ -14,3 +14,4 @@ vim.g.background = "light"
 vim.g.autoformat = false
 vim.g.lazyvim_picker = "snacks"
 vim.diagnostic.config({ virtual_lines = { current_line = true } })
+vim.o.winborder = "rounded"

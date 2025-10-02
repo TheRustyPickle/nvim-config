@@ -1,0 +1,27 @@
+return {
+    -- TODO: Maybe check later once more refined.
+    --
+    -- "oribarilan/lensline.nvim",
+    -- event = "LspAttach",
+    -- config = function()
+    --     require("lensline").setup({
+    --         providers = {
+    --             {
+    --                 name = "diagnostics",
+    --                 enabled = true,
+    --                 min_level = "WARN",
+    --             },
+    --             {
+    --                 name = "references",
+    --                 enabled = true,
+    --                 quiet_lsp = true,
+    --             },
+    --             {
+    --                 name = "last_author",
+    --                 enabled = true,
+    --                 cache_max_files = 50,
+    --             },
+    --         },
+    --     })
+    -- end,
+}

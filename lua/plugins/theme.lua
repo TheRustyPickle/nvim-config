@@ -5,9 +5,12 @@ return {
             colorscheme = "catppuccin",
         },
     },
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy = false },
-    { "sainnhe/everforest", name = "everforest" },
-    { "sainnhe/edge" },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+        lazy = false,
+    },
     {
         "uloco/bluloco.nvim",
         lazy = false,
