@@ -2,6 +2,28 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
         servers = {
+            tailwindcss = {
+                filetypes = { "rust", "html", "css" },
+                init_options = {
+                    userLanguages = {
+                        rust = "html",
+                    },
+                },
+                settings = {
+                    tailwindCSS = {
+                        includeLanguages = {
+                            rust = "html",
+                        },
+                        experimental = {
+                            classRegex = {
+                                [[class\s*=\s*"([^"]*)]],
+                                [[class:([^=\s]*)\s*=\s*]],
+                                [[view!\s*\{\s*[^}]*class\s*=\s*"([^"]*)]],
+                            },
+                        },
+                    },
+                },
+            },
             tsserver = {
                 enabled = false,
             },

@@ -24,6 +24,6 @@ end
 
 vim.schedule(function()
     map("n", "<leader><space>", function()
-        require("fff").find_files()
+        require("fff").find_in_git_root()
     end, { desc = "Open file picker (fff)" })
 end)
