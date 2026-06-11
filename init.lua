@@ -9,7 +9,7 @@ if vim.g.neovide then
     -- vim.o.guifont = "FantasqueSansM Nerd Font Mono:h13"
     -- vim.o.guifont = "Iosevka NFM:h12"
     vim.g.neovide_theme = "light"
-    vim.g.neovide_refresh_rate = 60
+    vim.g.neovide_refresh_rate = 180
     vim.g.neovide_cursor_smooth_blink = true
     vim.g.neovide_underline_stroke_scale = 3.2
     vim.g.neovide_cursor_animate_in_insert_mode = true

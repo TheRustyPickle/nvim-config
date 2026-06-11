@@ -18,7 +18,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.typescript" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.lang.python" },
-        { import = "lazyvim.plugins.extras.lang.markdown" },
+        -- { import = "lazyvim.plugins.extras.lang.markdown" },
         { import = "lazyvim.plugins.extras.ai.supermaven" },
         -- { import = "lazyvim.plugins.extras.ai.copilot-native" },
         -- { import = "lazyvim.plugins.extras.ai.copilot-chat" },
@@ -30,7 +30,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.editor.inc-rename" },
         { import = "lazyvim.plugins.extras.editor.snacks_explorer" },
         { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-        { import = "lazyvim.plugins.extras.formatting.biome" },
+        { import = "lazyvim.plugins.extras.lang.typescript.biome" },
         -- import/override with your plugins
         { import = "plugins" },
     },
