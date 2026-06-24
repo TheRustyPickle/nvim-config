@@ -27,3 +27,17 @@ vim.schedule(function()
         require("fff").find_in_git_root()
     end, { desc = "Open file picker (fff)" })
 end)
+
+map(
+    { "n" },
+    "<LEADER>cu",
+    require("package-info").update,
+    { silent = true, noremap = true, desc = "Update Dependency on the line" }
+)
+
+map(
+    { "n" },
+    "K",
+    require("package-info").change_version,
+    { silent = true, noremap = true, desc = "Change dependency version" }
+)
