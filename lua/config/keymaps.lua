@@ -37,7 +37,7 @@ map(
 
 map(
     { "n" },
-    "K",
+    "<LEADER>cK",
     require("package-info").change_version,
     { silent = true, noremap = true, desc = "Change dependency version" }
 )
